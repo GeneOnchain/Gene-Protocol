@@ -1,0 +1,117 @@
+# GENE — Gene Launch 000
+
+**Network:** Solana
+**Launch Infrastructure:** Meteora Dynamic Bonding Curve (DBC)
+**Gene Project:** 000
+
+---
+
+## Overview
+
+Gene - the official coin for Gene.
+
+---
+
+## Launch Mechanics
+
+| Setting | GENE 000 |
+|---|---|
+| Total Supply | 1,000,000,000 GENE |
+| Token Standard | Standard SPL Token |
+| Decimals | 6 |
+| Token Authority | Immutable |
+| Team / Creator Allocation | 0 GENE |
+| Tokens Held Back | 0 |
+| Privileged Creator First Buy | Disabled |
+| Quote Asset | SOL |
+| Trading Fee | 1% |
+| Fee Transition | None |
+| Dynamic / Volatility Fee | Disabled |
+| Pool Creation Fee | 0 SOL |
+| Graduation Target | 85 SOL |
+| Graduation | Automatic |
+| Graduation Venue | Meteora DAMM v2 |
+| Supply Migrated to Pool | 20% |
+| Graduated Trading Fee | 1% |
+| Gene Liquidity Skim | 0% |
+| Graduated Liquidity | 100% permanently locked |
+| Team Vesting | None |
+
+### What this means
+
+Gene receives **no pre-allocated GENE**, holds no tokens back, has no team vesting allocation, and receives no privileged first purchase.
+
+The token is immutable under the configured token authority, and the graduated liquidity allocated under this configuration is permanently locked rather than withdrawable by Gene.
+
+---
+
+## Where Every Fee Goes
+
+Gene's position is that "1% trading fee" is not a complete disclosure unless you are also told who receives it. The full breakdown:
+
+| Flow | Meteora Protocol | Gene's Revenue Wallet |
+|---|---|---|
+| 1% trading fee | 0.2% | 0.8% |
+| Migrated liquidity at graduation | fixed 0.2% skim | 0% |
+| Surplus — any SOL raised above the 85 SOL target | 20% | 80% |
+
+Three notes on that table:
+
+**The 1% fee applies to buys and sells alike,** before and after graduation. Meteora's 20% cut of it is fixed by the program and cannot be changed by any launcher.
+
+**Meteora takes a fixed 0.2% of migrated liquidity** at graduation. That is Meteora's, not Gene's. Gene's own skim is 0% — the "Gene Liquidity Skim" row above.
+
+**Surplus** exists only if the final buy overshoots the 85 SOL graduation target. It is uncommon and usually near zero, but it is not always zero, and 80% of it routes to Gene's revenue wallet. It is disclosed here because undisclosed revenue is exactly the thing this document exists to prevent.
+
+---
+
+## Public Wallets
+
+Gene will publicly disclose the same launch and revenue wallets used for its other documented launches.
+
+### Launch Wallet
+
+`8qG2fib8RJa6tgLjhRYbraWsTK345VXCnmHqgJn8bsV5`
+
+### Revenue Wallet
+
+`FhT8KGxekXRTpL1XNuyy2st5VB58dSjkgmSFKs4f75E9`
+
+These wallets are publicly disclosed so participants can independently inspect their activity.
+
+---
+
+## Disclaimer
+
+This document describes the intended configuration of **GENE — Gene Launch 000** and is provided for transparency, not financial advice or a promise of performance.
+
+Blockchain transactions are irreversible. No launch mechanism can eliminate bots, MEV, Sybil activity, transaction-ordering advantages, network latency or market risk.
+
+---
+
+## TL;DR
+
+GENE is intentionally simple: a familiar pump.fun-style launch through Meteora that automatically graduates to DAMM v2.
+
+There are:
+
+- **No team tokens**
+- **No pre-allocated insiders**
+- **No creator first-buy**
+- **No hidden allocation**
+- **No team vesting**
+- **No withdrawable graduated liquidity**
+
+Normal trading carries a **1% fee: 0.2% to Meteora and 0.8% to Gene's disclosed revenue wallet.**
+
+At graduation, **100% of the configured graduated liquidity is permanently locked**, with Gene's liquidity skim set to 0%.
+
+**Don't trust. Verify. Every relevant configuration above is publicly verifiable on-chain.**
+
+As always, DYOR.
+
+
+
+Normal market risks still apply, including price movement, slippage, MEV, network congestion, transaction ordering and liquidity conditions.
+
+GENE is a speculative token. Nothing in these mechanics guarantees price, returns, liquidity, volume or future value.
