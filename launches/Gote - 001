@@ -165,6 +165,22 @@ Every figure in this document is readable on-chain from the pool's configuration
 
 ---
 
+## Public Wallets
+
+Gene will publicly disclose the same launch and revenue wallets used for its other documented launches.
+
+### Launch Wallet
+
+`8qG2fib8RJa6tgLjhRYbraWsTK345VXCnmHqgJn8bsV5`
+
+### Revenue Wallet
+
+`FhT8KGxekXRTpL1XNuyy2st5VB58dSjkgmSFKs4f75E9`
+
+These wallets are publicly disclosed so participants can independently inspect their activity.
+
+---
+
 ## Disclaimer
 
 This document describes the intended configuration of **GOTE — Gene Launch 001** and is provided for transparency, not financial advice or a promise of performance.
