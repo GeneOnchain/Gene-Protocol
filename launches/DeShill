@@ -1,0 +1,217 @@
+# DESHILL — Gene Launch 002
+
+**Network:** Solana
+**Launch Infrastructure:** Meteora Dynamic Bonding Curve (DBC)
+**Gene Project:** 002
+
+---
+
+## Overview
+
+DESHILL is Gene's first launch with an allocation.
+
+Gene's previous launches held nothing back. This one does:
+
+**23% of supply never reaches the bonding curve — 3% team, 20% airdrop.**
+
+Both amounts and both destination wallets are published below, before launch. Neither can move until the token graduates.
+
+DESHILL launches through a Meteora Dynamic Bonding Curve and automatically graduates to DAMM v2. There is no protection window on this launch — the fee is a flat 1% from the very first trade.
+
+---
+
+## Launch Mechanics
+
+| Setting | DESHILL 002 |
+|---|---|
+| Total Supply | 1,000,000,000 DESHILL |
+| Token Standard | Standard SPL Token |
+| Decimals | 6 |
+| Token Authority | Immutable |
+| Team / Creator Allocation | 30,000,000 DESHILL (3%) |
+| Airdrop Allocation | 200,000,000 DESHILL (20%) |
+| Tokens Held Back | 230,000,000 DESHILL (23%) |
+| Allocation Release | After graduation only |
+| Privileged Creator First Buy | Disabled |
+| Quote Asset | SOL |
+| Launch Protection | None |
+| Trading Fee | 1% |
+| Fee Transition | None |
+| Dynamic / Volatility Fee | Disabled |
+| Pool Creation Fee | 0 SOL |
+| Graduation Target | 85 SOL |
+| Graduation | Automatic |
+| Graduation Venue | Meteora DAMM v2 |
+| Supply Migrated to Pool | 20% |
+| Graduated Trading Fee | 1% |
+| Gene Liquidity Skim | 0% |
+| Graduated Liquidity | 100% permanently locked |
+| Team Vesting | None |
+
+### What this means
+
+Gene holds back **230,000,000 DESHILL**: 30,000,000 for the team and 200,000,000 for the airdrop. Those tokens are configured on-chain as supply the curve never sells. Gene receives no privileged first purchase.
+
+Buyers on the bonding curve are sold **570,000,000 DESHILL (57% of supply)**. A further **200,000,000 (20%)** is migrated into the graduated pool.
+
+The token is immutable under the configured token authority, and the graduated liquidity allocated under this configuration is permanently locked rather than withdrawable by Gene.
+
+---
+
+## Where Every Fee Goes
+
+Gene's position is that "1% trading fee" is not a complete disclosure unless you are also told who receives it. The full breakdown:
+
+| Flow | Meteora Protocol | Gene's Revenue Wallet |
+|---|---|---|
+| 1% trading fee (before and after graduation) | 0.2% | 0.8% |
+| Migrated liquidity at graduation | fixed 0.2% skim | 0% |
+| Surplus — any SOL raised above the 85 SOL target | 20% | 80% |
+
+Three notes on that table:
+
+**The 1% fee applies to buys and sells alike,** before and after graduation. Meteora's 20% cut of it is fixed by the program and cannot be changed by any launcher.
+
+**Meteora takes a fixed 0.2% of migrated liquidity** at graduation. That is Meteora's, not Gene's. Gene's own skim is 0% — the "Gene Liquidity Skim" row above.
+
+**Surplus** exists only if the final buy overshoots the 85 SOL graduation target. It's uncommon and usually near zero, but it is not always zero, and 80% of it routes to Gene's revenue wallet. It is disclosed here because undisclosed revenue is exactly the thing this document exists to prevent.
+
+**Fees are never taken in DESHILL.** Every fee on this launch is collected in SOL. Gene does not accumulate the token through trading fees.
+
+---
+
+## The Held-Back Allocation
+
+The 230,000,000 held-back tokens are **not** bought off the curve, **not** minted later, and **not** sitting in a wallet during the launch. They are configured on-chain as tokens the bonding curve never sells.
+
+Until the token graduates, **Meteora's program refuses to release them.**
+
+That is the important part. For the entire life of the bonding curve — while every buyer is still on it — none of the team or airdrop allocation can be sold, moved or transferred by anyone, including Gene. It is enforced by the program, not by a promise.
+
+---
+
+## The Airdrop
+
+The airdrop allocation is **200,000,000 DESHILL (20% of supply)**.
+
+It is held back by the same mechanism as the team allocation: the tokens are configured on-chain as supply the bonding curve never sells, they cannot be released until the token graduates, and at graduation they are sent to the publicly disclosed airdrop wallet below in one transaction.
+
+What is committed to at the mechanical level:
+
+- The airdrop wallet receives exactly **200,000,000 DESHILL** and no more
+- It is a **publicly disclosed address**, so every distribution out of it is permanently visible on-chain
+- Nothing can be distributed before the token graduates
+
+**Distribution specifics — eligibility, weighting and schedule — are published separately.**
+
+There is no claim date, no guaranteed eligibility, and no promise that any particular wallet receives anything.
+
+---
+
+## What the Allocation Does to the Chart
+
+Holding 23% back means the curve has fewer tokens to sell for the same 85 SOL. The honest consequence, stated here rather than discovered on a chart:
+
+| Measure | A launch with no allocation | DESHILL 002 |
+|---|---|---|
+| Opening market cap | ~27 SOL | **~52 SOL** |
+| Graduation market cap | 425 SOL | **425 SOL** |
+| Move from open to graduation | ~16x | **~8x** |
+
+DESHILL opens at roughly double the market cap of a launch with no allocation and graduates at the same place, so the move from launch to graduation is about half. Graduation also arrives sooner in token terms, because there is less supply for the curve to sell.
+
+This is the unavoidable trade-off of any allocation. It is the cost of funding an airdrop, and it is disclosed up front.
+
+---
+
+## What Traders Need to Know
+
+The fee is a flat **1%** from the very first trade. There is no protection window on this launch and no fee transition.
+
+Before trading:
+
+1. Use the official DESHILL contract address published through Gene's official channels.
+2. Verify that your terminal shows the expected **1% trading fee**.
+3. Review your transaction and slippage before signing.
+
+Terminals and charts may display the held-back supply differently — some count it as circulating, some do not. The configuration account on-chain is the authority, and the figures in this document match it.
+
+Price movement, slippage, MEV, network congestion, transaction ordering and normal market risks all apply.
+
+DESHILL is a speculative token. Nothing in these mechanics guarantees price, returns, liquidity, volume or future value.
+
+---
+
+## Public Verification
+
+Gene's approach is simple:
+
+**Don't trust. Verify.**
+
+Gene will publicly disclose the relevant launch wallet, revenue wallet, team wallet, airdrop wallet, contract address, launch configuration and available Meteora/on-chain information.
+
+Every figure in this document is readable on-chain from the pool's configuration account — including the 230,000,000 held back and the wallets it is destined for. Participants should independently verify the mechanics and addresses before interacting.
+
+---
+
+## Public Wallets
+
+Gene publicly discloses every wallet involved in this launch.
+
+### Launch Wallet
+
+`8qG2fib8RJa6tgLjhRYbraWsTK345VXCnmHqgJn8bsV5`
+
+### Revenue Wallet
+
+`FhT8KGxekXRTpL1XNuyy2st5VB58dSjkgmSFKs4f75E9`
+
+### Team Allocation Wallet
+
+`6by7jZ2hoKd2GGND7GLUnHH8TgdFgvH3yxHJbrYqmCDn`
+
+Receives exactly **30,000,000 DESHILL** after graduation.
+
+### Airdrop Allocation Wallet
+
+`9NkP3A58ic3sqiT5P1LWtJSzKMabwEnbERh1PQuaDNrh`
+
+Receives exactly **200,000,000 DESHILL** after graduation.
+
+These wallets are publicly disclosed so participants can independently inspect their activity.
+
+---
+
+## Disclaimer
+
+This document describes the intended configuration of **DESHILL — Gene Launch 002** and is provided for transparency, not financial advice or a promise of performance.
+
+Blockchain transactions are irreversible. No launch mechanism can eliminate bots, MEV, Sybil activity, transaction-ordering advantages, network latency or market risk.
+
+Nothing in this document entitles any wallet to any airdrop allocation.
+
+---
+
+## TL;DR
+
+DESHILL is a familiar pump.fun-style launch through Meteora that automatically graduates to DAMM v2, with one major difference: **it has an allocation, and the allocation is fully disclosed.**
+
+**23% of supply is held back — 3% team (30,000,000) and 20% airdrop (200,000,000).** Both destination wallets are published above.
+
+**None of it can move until the token graduates.** Meteora's program refuses to release it while buyers are still on the curve. At graduation it is released to the two disclosed wallets, in the exact amounts stated.
+
+The airdrop's eligibility, weighting and schedule are published separately. Nothing can be distributed before graduation.
+
+The fee is a flat **1% from the first trade** — no protection window on this launch.
+
+There are **no pre-allocated insiders beyond the two disclosed wallets, no creator first-buy, no hidden allocation, no team vesting, no withdrawable graduated liquidity, and no fees ever taken in DESHILL.**
+
+Normal trading carries a **1% fee: 0.2% to Meteora and 0.8% to Gene's disclosed revenue wallet.**
+
+At graduation, **100% of the configured graduated liquidity is permanently locked**, with Gene's liquidity skim set to 0%.
+
+Because 23% is held back, DESHILL opens at a **higher market cap (~52 SOL)** and runs a **smaller multiple to graduation (~8x)** than a launch with no allocation. That is the cost of the allocation and it is stated up front.
+
+**Don't trust. Verify. Every relevant configuration above is publicly verifiable on-chain.**
+
+As always, DYOR.
